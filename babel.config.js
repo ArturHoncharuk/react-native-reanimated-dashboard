@@ -1,25 +1,26 @@
-export const presets = ['module:@react-native/babel-preset'];
-
-export const plugins = [
-  [
-    'react-native-reanimated/plugin',
-    'module-resolver',
-    {
-      extensions: [
-        '.ios.js',
-        '.android.js',
-        '.ios.jsx',
-        '.android.jsx',
-        '.js',
-        '.jsx',
-        '.json',
-        '.ts',
-        '.tsx',
-      ],
-      root: ['.'],
-      alias: {
-        '@': './src',
+module.exports = {
+  presets: ['module:@react-native/babel-preset'],
+  plugins: [
+    [
+      'module-resolver',
+      {
+        extensions: [
+          '.ios.js',
+          '.android.js',
+          '.ios.jsx',
+          '.android.jsx',
+          '.js',
+          '.jsx',
+          '.json',
+          '.ts',
+          '.tsx',
+        ],
+        root: ['.'],
+        alias: {
+          '@': './src',
+        },
       },
-    },
+    ],
+    'react-native-reanimated/plugin',
   ],
-];
+};
