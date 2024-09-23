@@ -1,9 +1,9 @@
+import {useCallback} from 'react';
 import {View} from 'react-native';
+import {useSharedValue} from 'react-native-reanimated';
 import {styles} from './styles';
 import {_users} from '@/constants';
 import {Profile} from '@/components/composite';
-import {useSharedValue} from 'react-native-reanimated';
-import {useCallback} from 'react';
 
 export function Leaderboard() {
   const _anim = useSharedValue(0);

@@ -5,10 +5,10 @@
  * @format
  */
 
-import {Leaderboard} from '@/components/templates';
 import React from 'react';
 import {SafeAreaView, StatusBar, useColorScheme} from 'react-native';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
+import {Leaderboard} from '@/components/templates';
 
 export default function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';

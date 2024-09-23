@@ -1,5 +1,5 @@
-import {AVATAR_SIZE} from '@/constants';
 import {StyleSheet} from 'react-native';
+import {AVATAR_SIZE} from '@/constants';
 
 export const styles = StyleSheet.create({
   container: {
