@@ -5,6 +5,7 @@
  * @format
  */
 
+import {Leaderboard} from '@/components/templates';
 import React from 'react';
 import {SafeAreaView, StatusBar, useColorScheme} from 'react-native';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
@@ -13,6 +14,7 @@ export default function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
+    flex: 1,
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
 
@@ -22,6 +24,7 @@ export default function App(): React.JSX.Element {
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
         backgroundColor={backgroundStyle.backgroundColor}
       />
+      <Leaderboard />
     </SafeAreaView>
   );
 }
