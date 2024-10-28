@@ -1,1 +1,1 @@
-export * from './score';
+export {_randomScore} from './score';
